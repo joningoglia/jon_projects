@@ -1,5 +1,5 @@
 # Fixes bad chapter files in videos
-# by 42GAMI w/ get_time func and other small edits by Jon Ingoglia
+# by 42GAMI & Jon Ingoglia
 
 # TO USE: first use ffmpeg to extract the chapter file
 # example: ffmpeg -i "file.mp4" -f ffmetadata input.txt
