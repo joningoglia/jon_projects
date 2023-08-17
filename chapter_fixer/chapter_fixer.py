@@ -1,13 +1,13 @@
 # Fixes bad chapter files in videos
-# by 42GAMI and Jon I
+# by 42GAMI w/ get_time func and other small edits by Jon Ingoglia
 
 # TO USE: first use ffmpeg to extract the chapter file
-# example: ffmpeg -i "file.mp4" -f ffmetadata file.txt
+# example: ffmpeg -i "file.mp4" -f ffmetadata input.txt
 # then run this script in same dir
 
 import math
 
-metadata_file = "file.txt"
+metadata_file = "input.txt"
 
 try:
     with open(metadata_file, "r") as f:

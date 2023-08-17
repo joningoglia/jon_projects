@@ -1,4 +1,7 @@
-metadata_file = "anisama_setlist.txt"
+# Formats Anisama concert setlists for easy posting on Discord
+# by Jon Ingoglia
+
+metadata_file = "input.txt"
 
 try:
     with open(metadata_file, "r") as f:
