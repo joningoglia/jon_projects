@@ -1,9 +1,5 @@
-# Fixes bad chapter files in videos
+# Helps fix bad chapter files in videos
 # by 42GAMI & Jon Ingoglia
-
-# TO USE: first use ffmpeg to extract the chapter file
-# example: ffmpeg -i "file.mp4" -f ffmetadata input.txt
-# then run this script in same dir
 
 import math
 
