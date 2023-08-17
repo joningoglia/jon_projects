@@ -9,7 +9,9 @@ This script is intended to help fix "invalid chapter file" errors when trying to
 1. Move the video file into the same directory as this script
 2. Install/copy ffmpeg into the same directory
 3. Using ffmpeg, run this command, replacing the filename with the actual filename:
-    ffmpeg -i "YOUR_VIDEO_FILE.mp4" -f ffmetadata input.txt
+
+        ffmpeg -i "YOUR_VIDEO_FILE.mp4" -f ffmetadata input.txt
+
 4. Run chapter_fixer.py
 5. Drag the video file and output.xml into MKVToolNix, dismiss the message that comes up
 6. Check output tab and make sure file path to output.xml is there, then multiplex them together
@@ -19,5 +21,7 @@ This script is intended to help fix "invalid chapter file" errors when trying to
 
 1. Extract the audio using MKVToolNix, rename it to audio.m4a
 2. In cmd run the following: 
-    ffmpeg -i audio.m4a -acodec flac audio.flac
+
+        ffmpeg -i audio.m4a -acodec flac audio.flac
+
 3. Add the flac back in using MKVToolNix and multiplex
