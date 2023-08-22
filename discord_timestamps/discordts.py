@@ -19,6 +19,6 @@ print(f'<t:{unix_time}:t>	{d.fromtimestamp(unix_time).strftime(f"%I:%M %p")}')
 print(f'<t:{unix_time}:T>	{d.fromtimestamp(unix_time).strftime(f"%I:%M:%S %p")}')
 print(f'<t:{unix_time}:R>	{d.fromtimestamp(unix_time).strftime(f"(relative time)")}')
 
-text = f'Join us <t:{unix_time}:R> (<t:{unix_time}:t>) for...'
+text = f'Join us <t:{unix_time}:R> (at <t:{unix_time}:t>) for...'
 
 print(f"\n{text}")
