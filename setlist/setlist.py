@@ -2,9 +2,10 @@
 # by Jon Ingoglia
 
 metadata_file = "input.txt"
+showNumbers = 0
 
 try:
-    with open(metadata_file, "r") as f:
+    with open(metadata_file, "r", encoding="utf-8") as f:
         metadata = f.read()
 except FileNotFoundError:
     print(f"Error: {metadata_file} not found in the working directory.")
@@ -40,17 +41,20 @@ for block in blocks:
     for line in block:
         output += f"{str(line)}\n"
     output += "\n"
-    setlist_output += f"{index}. {block[1]} / {block[2]}\n".replace(":musical_note: ", "").replace(":microphone: ", "")
+    if (showNumbers == 1):
+        setlist_output += f"{index}. {block[1]} / {block[2]}\n".replace(":musical_note: ", "").replace(":microphone: ", "")
+    else:
+        setlist_output += f"{block[1]} / {block[2]}\n".replace(":musical_note: ", "").replace(":microphone: ", "")
     index += 1
 
 output_file = 'output.txt'
-with open(output_file, 'w') as o:
+with open(output_file, 'w', encoding="utf-8") as o:
     o.write(output)
 
 print(f"Content has been written to {output_file}")
 
 output_file = 'setlist.txt'
-with open(output_file, 'w') as o:
+with open(output_file, 'w', encoding="utf-8") as o:
     o.write(setlist_output)
 
 print(f"Setlist has been written to {output_file}")
