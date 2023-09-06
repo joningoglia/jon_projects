@@ -154,3 +154,4 @@ cython_debug/
 # Custom ignores
 sampler/
 setlist/*.txt
+* - Shortcut.lnk
