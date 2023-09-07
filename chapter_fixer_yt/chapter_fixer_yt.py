@@ -1,4 +1,4 @@
-# Generatea chapter files from timestamps in YouTube comments
+# Generate a chapter file from timestamps in video comments
 # by Jon Ingoglia
 
 import re
