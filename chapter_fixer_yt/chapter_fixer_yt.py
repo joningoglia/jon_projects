@@ -27,7 +27,7 @@ xml_content += '<Chapters>\n'
 xml_content += '    <EditionEntry>\n'
 
 for i, (start, end, title) in enumerate(chapters):
-    print(f"{title}: {start}-{end}")
+    print(f"{start}-{end}: {title}")
     xml_content += f'        <ChapterAtom>\n'
     xml_content += f'            <ChapterTimeStart>{start}</ChapterTimeStart>\n'
     xml_content += f'            <ChapterTimeEnd>{end}</ChapterTimeEnd>\n'
