@@ -1,0 +1,179 @@
+.playerNumber {
+  margin-top: 40px;
+  margin-left: 10px;
+  position: absolute;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 36px;
+  color: #999;
+  font-weight: bold;
+}
+
+.playerSection {
+  width: 625px;
+  height: 625px;
+  margin: 15px;
+  border: 3px solid black;
+  padding: 10px;
+  background-color: #CCC;
+  position: absolute;
+}
+
+.statsSection {
+  width: 985px;
+  height: 270px;
+  margin: 740px 15px 15px 15px;
+  position: absolute;
+  border: 3px solid black;
+  padding: 10px;
+  background-color: #CCC;
+}
+
+.statsLinkSection {
+  margin: 690px 15px 15px 15px;
+  position: absolute;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.statsLinkSection a {
+  text-decoration: none;
+}
+
+.statsLinkSection a:hover {
+  color: red;
+}
+
+.playerLabel {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 5px;
+  text-align: center;
+}
+
+.textLabel {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 5px;
+  text-align: right;
+}
+
+.textLabel a {
+  font-weight: bold;
+  text-decoration: none;
+  padding: 6px;
+  border: 1px solid black;
+  background-color: #B5B5B5;
+}
+
+.textLabel a:hover {
+  color: red;
+  background-color: #BDBDBD;
+}
+
+.statBox input {
+  width: 90px;
+  text-align: center;
+  font-size: 20px;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.playerBox {
+  padding: 5px;
+  width: 175px;
+  height: 175px;
+  border: 1px solid black;
+  margin: 10px;
+  float: left;
+  text-align: center;
+  font-family: Tahoma, Geneva, sans-serif;
+  background-color: #FFF;
+  box-shadow: 10px 10px 5px #888888;
+}
+
+.playerBox a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.playerBox a:hover {
+  color: red;
+}
+
+.playerButton {
+  padding: 2px;
+  font-family: Tahoma, Geneva, sans-serif;
+}
+
+.playerName {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 10px;
+  font-weight: bold;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 16px;
+  width: 150px;
+}
+
+.boardSection {
+  width: 300px;
+  height: 625px;
+  margin: 15px 15px 15px 700px;
+  position: absolute;
+  border: 3px solid black;
+  padding: 10px;
+  background-color: #CCC;
+  text-align: center;
+}
+
+.boardTable {
+  margin-left: 25px;
+  margin-top: 20px;
+  border-spacing: 10px;
+}
+
+.step {
+  width: 225px;
+  border: 2px solid black;
+  text-align: center;
+  font-size: 36px;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  box-shadow: 10px 10px 5px #888888;
+  background-color: #FFF;
+}
+
+#bankLink {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 36px;
+  padding: 10px;
+  width: 200px;
+  margin: 20px 40px 20px 40px;
+  border: 1px solid black;
+  background-color: #030;
+  box-shadow: 10px 10px 5px #888888;
+  color: #0C0;
+  text-decoration: none;
+}
+
+.statBoxSmall {
+  border-top: 2px solid #CCC;
+  border-bottom: 2px solid #CCC;
+  padding: 13px;
+  border-collapse: collapse;
+}
+
+#bankLink:hover {
+  cursor: pointer;
+  background-color: #096;
+  color: #030;
+}
+
+#banked,
+#total {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 36px;
+}
