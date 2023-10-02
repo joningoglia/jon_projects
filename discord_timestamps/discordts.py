@@ -48,11 +48,20 @@ def get_age(date):
 
     return PrettyDelta(date).format()
 
-tm = input("Enter time (hh:mm):") # No validation (yet)
+today = input("Enter 1 for today or 0 for another date: ")
 
-date_string = d.today().strftime(f"%Y-%m-%d {tm}:00")
-date_obj = d.strptime(date_string, f"%Y-%m-%d %H:%M:%S")
-unix_time = int(d.timestamp(date_obj))
+if (not today):
+    tm = input("Enter time (HH:MM): ")
+
+    date_string = d.today().strftime(f"%Y-%m-%d {tm}:00")
+    date_obj = d.strptime(date_string, f"%Y-%m-%d %H:%M:%S")
+    unix_time = int(d.timestamp(date_obj))
+else:
+    tm = input("Enter date/time (YYYY-MM-DD HH:MM:SS): ")
+
+    date_string = d.today().strftime(f"{tm}")
+    date_obj = d.strptime(date_string, f"%Y-%m-%d %H:%M:%S")
+    unix_time = int(d.timestamp(date_obj))
 
 print(f'\nDATE/TIME INPUT: {date_obj}')
 print(f'UNIX TIMESTAMP: {unix_time}\n')

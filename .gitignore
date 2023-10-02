@@ -155,3 +155,4 @@ cython_debug/
 sampler/
 setlist/*.txt
 * - Shortcut.lnk
+add_chapter_names/
