@@ -1,5 +1,3 @@
-# Takes a time from later today from user input and generates timestamps for Discord
-
 import datetime
 
 d = datetime.datetime
