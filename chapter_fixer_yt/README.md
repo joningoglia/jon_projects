@@ -5,3 +5,13 @@
 - Last line must be the length of the entire video followed by `[END]`
 - Run this script, it will output an XML file
 - Use MKVToolNix GUI to add the XML file to the video
+
+# Regex to move timestamps from end of line to start
+
+**Find:**
+
+`(.+) ([0-9][0-9]?:[0-9][0-9]:?[0-9]?[0-9]?)`
+
+**Replace:**
+
+`$2 $1`
